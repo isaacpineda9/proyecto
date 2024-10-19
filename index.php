@@ -1,33 +1,16 @@
 <?php
     include_once ("modulos/header.php")
 ?>
-    <body>
-        <header>
+    <body class="bg-dark">
+        <header >
             <?php
                 include_once ("modulos/navbar.php")
             ?>
         </header>
-        <main>
+        <main >
+
+            <div class="container-xl mt-3 mb-4">
             <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li
-                        data-bs-target="#carouselId"
-                        data-bs-slide-to="0"
-                        class="active"
-                        aria-current="true"
-                        aria-label="First slide"
-                    ></li>
-                    <li
-                        data-bs-target="#carouselId"
-                        data-bs-slide-to="1"
-                        aria-label="Second slide"
-                    ></li>
-                    <li
-                        data-bs-target="#carouselId"
-                        data-bs-slide-to="2"
-                        aria-label="Third slide"
-                    ></li>
-                </ol>
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
                         <img
@@ -47,6 +30,7 @@
                         <img
                             src="./img/carrusel3.jpg"
                             class="w-100 d-block"
+                            style=" object-fit: cover;"
                             alt="Third slide"
                         />
                     </div>
@@ -70,26 +54,20 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+            </div>
             <!-- aqui finaliza el carrusel --> 
 
 
-
-            
-            <div class="p-5 mb-4 bg-light rounded-3">
-                <div class="container-fluid py-5">
-                    <h1 class="display-5 fw-bold">Inventarios de maquinas expendedoras</h1>
-                    <p class="col-md-8 fs-4">
-                        En nuestra pagina web vas a encontrar una variedad de opciones para
-                        poder manejar tus inventarios y tenerlos al dia y evitar problemas 
-                        de contabilidad y no tener incidentes con los inventarios.
-                    </p>
+                <div class="container-fluid p-5 bg-dark">
+                    <div class="py-5 card p-3 text-center">
+                        <h1 class="fs-1 fw-bold card-title">Inventarios de maquinas expendedoras</h1>
+                        <p class="fs-4 card-body ">
+                            En nuestra pagina web vas a encontrar una variedad de opciones para
+                            poder manejar tus inventarios y tenerlos al dia y evitar problemas 
+                            de contabilidad y no tener incidentes con los inventarios.
+                        </p>
+                    </div>
                 </div>
-            </div>
-
-
-           
-            
-            
             
         </main>
 <?php        

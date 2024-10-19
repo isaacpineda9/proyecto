@@ -42,116 +42,116 @@
         </header>
         <main>
             
-            <h1>Gestión de productos</h1>
-            <div class="row align-items-md-stretch">
-                <div class="col-md-3">
-                    <div
-                        class="h-100 p-5 text-dark bg-light border rounded-3"
-                    >
-                        <h4>ingresar producto</h4>
-                        <form action="" method="post">
-                            <div class="mb-3">
-                                <label for="" class="form-label">Nombre del producto:</label>
-                                <input
+        <div class="container mt-5">
+            <h1 class="text-center">Gestión de productos</h1>
+
+                <div class="row align-items-md-stretch pt-3">
+                    <div class="col-md-3">
+                        <div class="h-100 p-5 text-dark bg-light border rounded-3 ">
+                            <h4>ingresar producto</h4>
+                            <form action="" method="post">
+                                <div class="mb-3">
+                                    <label for="" class="form-label">Nombre del producto:</label>
+                                    <input
                                     type="text"
                                     class="form-control"
                                     name="nombre"
                                     id=""
                                     aria-describedby="helpId"
                                     placeholder="Ingrese producto"
-                                />
-                            
-                            </div>
-                            
-
-                            <div class="mb-3">
-                                <label for="" class="form-label">descripción del producto:</label>
-                                <input
+                                    />
+                                    
+                                </div>
+                                
+                                
+                                <div class="mb-3">
+                                    <label for="" class="form-label">descripción del producto:</label>
+                                    <input
                                     type="text"
                                     class="form-control"
                                     name="descripcion"
                                     id=""
                                     aria-describedby="helpId"
                                     placeholder="Ingrese descripción"
-                                />
-                            
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="" class="form-label">precio del producto:</label>
-                                <input
+                                    />
+                                    
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="" class="form-label">precio del producto:</label>
+                                    <input
                                     type="number"
                                     class="form-control"
                                     name="precio"
                                     id=""
                                     aria-describedby="helpId"
                                     placeholder="Ingrese precio"
-                                />
-                            
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="" class="form-label">existencia del producto:</label>
+                                    />
+                                    
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="" class="form-label">existencia del producto:</label>
                                 <input
-                                    type="number"
-                                    class="form-control"
-                                    name="existencia"
-                                    id=""
-                                    aria-describedby="helpId"
-                                    placeholder="Ingrese existencia"
+                                type="number"
+                                class="form-control"
+                                name="existencia"
+                                id=""
+                                aria-describedby="helpId"
+                                placeholder="Ingrese existencia"
                                 />
-                            
+                                
                             </div>
-
-                            <button
-                                type="submit"
-                                class="btn btn-success"
-                            >
-                                Guardar
-                            </button>
                             
                             <button
-                                type="reset"
-                                class="btn btn-primary"
+                            type="submit"
+                            class="btn btn-success"
                             >
-                                Limpiar
-                            </button>
-                        </form>
+                            Guardar
+                        </button>
                         
-                    </div>
+                            <button
+                            type="reset"
+                            class="btn btn-primary"
+                            >
+                            Limpiar
+                        </button>
+                    </form>
+                    
                 </div>
+            </div>
+            
+            
+            <div class="col-md-9">
+                <div
+                class="h-100 p-5 text-dark bg-light border rounded-3"
+                >
+                <h4>listado de productos</h4>
                 
-                
-                <div class="col-md-9">
-                    <div
-                        class="h-100 p-5 text-dark bg-light border rounded-3"
-                    >
-                        <h4>listado de productos</h4>
-                        
-                        <?php
+                <?php
                             $qry ="SELECT * FROM inventario";
                             $res = mysqli_query($conn, $qry);
-                        ?>
+                            ?>
                         <div
-                            class="table-responsive"
+                        class="table-responsive rounded-2"
                         >
-                            <table
-                                class="table table-secondary"
-                            >
-                                <thead>
-                                    <tr>
-                                        <th scope="col">id</th>
-                                        <th scope="col">Nombre</th>
-                                        <th scope="col">Descripcion</th>
-                                        <th scope="col">Precio</th>
-                                        <th scope="col">Existencia</th>
-                                        <th scope="col" colspan="2"> <center>Acciones</center></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php
+                        <table
+                        class="table table-secondary"
+                        >
+                        <thead>
+                            <tr>
+                                <th scope="col">id</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Descripcion</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Existencia</th>
+                                <th scope="col" colspan="2"> <center>Acciones</center></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
                                         while ($fila = mysqli_fetch_assoc($res)) { 
-                                    ?>
+                                            ?>
                                     <tr class="">
                                         <td scope="row"><?php echo $fila['id']?></td>
                                         <td><?php echo $fila['Nombre']?></td>
@@ -163,7 +163,7 @@
                                     </tr>
                                     <?php
                                         }
-                                    ?>
+                                        ?>
                                     
                                 </tbody>
                             </table>
@@ -172,9 +172,10 @@
                     </div>
                 </div>
             </div>
+        </div>
             
-
+            
         </main>
-<?php        
+        <?php        
     include_once ("modulos/footer.php")
 ?>        

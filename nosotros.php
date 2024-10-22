@@ -1,47 +1,47 @@
 <?php
     include_once ("modulos/header.php")
 ?>
-    <body>
+    <body class="h-100">
+        
         <header>
             <?php
                 include_once ("modulos/navbar.php")
             ?>
         </header>
-        <main>
-        <div class="container mt-3">
-            <div class="row align-items-md-stretch">
+        
+        <div class="container mt-3 h-100">
+            <div class="row align-items-md">
                     <div class="col-md-6">
                         <div
-                            class="p-5 text-white bg-primary border rounded-3"
-                        >
+                            class="p-5 text-white bg-primary border rounded-3 h-100">
+                        
                             <h2>Isaac Pineda Aguirre</h2>
-                            <img src="">
+                            <div class="d-flex justify-content-center">
+                                <img src="./img/foto_i.png" class ="img-thumbnail"/>
+                            </div>
                             <p>
-                                Swap the background-color utility and add a `.text-*` color
-                                utility to mix up the jumbotron look. Then, mix and match with
-                                additional component themes and more.
+                                fue el encargado del backend de la página y del funcionamiento lógico, planteador de las estrategias para llevar a cabo el proyecto
                             </p>
                             
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div
-                            class="p-5 bg-primary border rounded-3"
-                        >
+                            class="p-5 text-white bg-primary border rounded-3">
+                        
                             <h2>Juan Jose Gallego Villegas</h2>
-                            <img src="">
+                            <div class="d-flex justify-content-center">
+                                <img src="./img/gallego_sillo.jpeg" class ="img-thumbnail"/>
+                            </div>
                             <p>
-                                Or, keep it light and add a border for some added definition
-                                to the boundaries of your content. Be sure to look under the
-                                hood at the source HTML here as we've adjusted the alignment and
-                                sizing of both column's content for equal-height.
+                                fue el encargado de los estilos de la página y colaborador con la empresa
                             </p>
                             
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
+        
 <?php        
     include_once ("modulos/footer.php")
 ?>   

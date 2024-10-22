@@ -13,9 +13,15 @@
 
         $resultado = mysqli_query($conn,$sql);
         if ($resultado){
-            echo "Producto Guardado con exito";
+            echo "<script>
+                alert('Producto guardado con exito');
+                window.location.href = 'productos.php';
+                 </script>";
         }else{
-            echo "No se pudo guardar el producto";
+            echo "<script>
+                alert('No se pudo guardar el producto');
+                window.location.href = 'productos.php';
+                 </script>";
         }
 
     }

@@ -13,9 +13,9 @@
     
 <nav class="navbar navbar-expand-sm navbar-light bg-" style="background-color: #aeb6bf;">
 
-    
+
     <div class="container">
-        <a class="navbar-brand" href="#">inventario maquinas expendedoras</a>
+    <a class="navbar-brand" href="#">Inventario Maquinas Expendedoras</a>
         <button
             class="navbar-toggler d-lg-none"
             type="button"
@@ -46,11 +46,10 @@
                 </li>
             </ul>
             <form class="d-flex my-2 my-lg-0">
-                Nombre: <?php 
-                            echo ($_SESSION['nombre']);
-                            echo " Tipo: ";
-                            if ($_SESSION['rol'] == 1) echo "Usuario";
-                            if ($_SESSION['rol'] == 2) echo "Administrador";
+                        <?php 
+                            ($_SESSION['nombre']);
+                            if ($_SESSION['rol'] == 1);
+                            if ($_SESSION['rol'] == 2);
                         ?>
 
                 <ul class="nav-item dropdown">
@@ -89,7 +88,7 @@ if($r == 1){  /// muestra el navbar del usuario
 
 
 <div class="container">
-<a class="navbar-brand" href="#">inventario maquinas expendedoras</a>
+<a class="navbar-brand" href="#">Inventario Maquinas Expendedoras</a>
 <button
             class="navbar-toggler d-lg-none"
             type="button"
@@ -117,13 +116,6 @@ if($r == 1){  /// muestra el navbar del usuario
         </li>
     </ul>
     <form class="d-flex my-2 my-lg-0">
-                Nombre: <?php 
-                            
-                            echo ($_SESSION['nombre']);
-                            echo " Tipo: ";
-                            if ($_SESSION['rol'] == 1) echo "Usuario";
-                            if ($_SESSION['rol'] == 2) echo "Administrador";
-                        ?>
 
                 <ul class="nav-item dropdown">
             
@@ -161,7 +153,7 @@ if($r == 0){  /// muestra el navbar del visitante
 
 
 <div class="container">
-<a class="navbar-brand" href="#">inventario maquinas expendedoras</a>
+<a class="navbar-brand" href="#">Inventario Maquinas Expendedoras</a>
 <button
             class="navbar-toggler d-lg-none"
             type="button"
@@ -186,15 +178,6 @@ if($r == 0){  /// muestra el navbar del visitante
         </li>
     </ul>
     <form class="d-flex my-2 my-lg-0">
-        Nombre: <?php 
-                    
-                        if (isset($_SESSION['nombre'])) {
-                            echo ($_SESSION['nombre']);
-                            echo " Tipo: ";
-                                if ($_SESSION['rol'] == 1) echo "Usuario";
-                                if ($_SESSION['rol'] == 2) echo "Administrador";
-                        }
-                ?>
 
         <ul class="nav-item dropdown">
     

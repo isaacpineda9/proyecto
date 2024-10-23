@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 03-10-2024 a las 00:29:09
+-- Tiempo de generación: 23-10-2024 a las 06:40:26
 -- Versión del servidor: 10.4.32-MariaDB
--- Versión de PHP: 8.0.30
+-- Versión de PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -40,7 +40,7 @@ CREATE TABLE `inventario` (
 --
 
 INSERT INTO `inventario` (`id`, `Nombre`, `Descripcion`, `Precio`, `Existencia`) VALUES
-(1, 'daddad', 'dadadadada', 12, 2);
+(1, 'Chocoramo', 'bizcocho recubierto con chocolate', 2600, 44);
 
 -- --------------------------------------------------------
 
